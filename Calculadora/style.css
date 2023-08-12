@@ -10,11 +10,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 15%;
+    padding-top: 8%;
 }
 button {
     background-color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 1.1em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
     text-align: center;
@@ -38,17 +38,20 @@ button {
 
 }
 
+#calculator {
+    font-size: 1.3em;
+}
 
 
 #calculator, #resultado {
-    min-height: 1.5em;
+    min-height: 2em;
     padding: .2em;
     word-wrap: break-word;
     text-align: right;
 }
 
 #resultado {
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 550;
 }
 
@@ -77,12 +80,15 @@ button {
 
 }
 
-#buttons #igual {
+#buttons #igual, .limpar {
    grid-column: span 2;
    background-color: #75a5eb;
+
 }
 
 #buttons #igual:hover {
     background-color: #3a91d8;
 
 }
+
+

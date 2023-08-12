@@ -4,12 +4,30 @@ const result = document.querySelector('#resultado')
 
 
 function inserir(valor) {
-    document.querySelector('#resultado').innerText += valor;
-}
+
+    const limite = document.querySelector('#resultado').innerText;
+
+    if (['+', '-', '*', '/'].includes(limite.slice(-1)) && ['+', '-', '*', '/'].includes(valor)) {
+
+        return;
+    }
+
+
+     document.querySelector('#resultado').innerText += valor
+  
+       
+  
+    }
+
+    
+   
 
 function clean () {
     resultado.innerHTML = ''
+    calculator.innerHTML = ''
 }
+
+
 
 function backspace () {
     if (resultado.textContent) {
@@ -17,21 +35,23 @@ function backspace () {
 
         resultado.innerHTML = result.substring(0, result.length -1)
 
+
+
+
     }
 }
+
+
 
 const igual = () => {
     if(resultado.textContent != 'Erro') {
+        document.querySelector('#calculator').innerHTML = resultado.innerHTML
+
+
         document.getElementById('resultado').innerHTML = eval(resultado.innerHTML)
-
-        const histórico = document.getElementById('resultado').innerHTML
-        document.getElementById('calculator').innerHTML 
-    }
-
-
+    
+    
+}
 }
 
-while (resultado.textContent) {
-    document.getElementById('calculator').innerHTML = (resultado.innerHTML)
 
-}
