@@ -1,3 +1,49 @@
+@media (max-width: 600px) {
+    #calc {
+        width: 100%; 
+        max-width: 300px;
+        padding-top: -10px;
+    }
+
+    #calculator {
+        font-size: 16px; 
+        margin-bottom: -15px;
+        margin-top: -10px;
+      
+        
+    }
+
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 5px; 
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px; 
+        font-size: 18px; 
+    }
+    body {
+        height: 500px;
+        margin-top: -30px;
+        overflow: hidden;
+    }
+
+    #resultado {
+        margin-bottom: -15px;
+    }
+
+    #buttons button {
+        padding: 18px 15px; 
+        font-size: 14px; 
+    }
+
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0px;
@@ -10,7 +56,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 8%;
+    padding-top: 5%;
 }
 button {
     background-color: white;
